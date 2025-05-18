@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgi Yarışmaları - Düzce Hürriyet Ortaokulu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="logo-container">
+                    <img src="https://duzcehurriyetortaokulu.meb.k12.tr/tema/tema/7/img/logo-meb.png" alt="Düzce Hürriyet Ortaokulu Logo" class="logo">
+                </div>
+                <div class="school-info">
+                    <h1>T.C. DÜZCE VALİLİĞİ</h1>
+                    <h2>Düzce Hürriyet Ortaokulu</h2>
+                </div>
+                </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="https://duzcehurriyetortaokulu.meb.k12.tr/">Ana Sayfa</a></li>
+                    <li><a href="#">Okulumuz</a></li> <li><a href="#">Birimlerimiz</a></li>
+                    <li><a href="#">Rehberlik</a></li>
+                    <li><a href="#" class="active">Bilgi Yarışmaları</a></li>
+                    <li><a href="#">Projelerimiz</a></li>
+                    <li><a href="#">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="page-title-container">
+                <h2>BİLGİ YARIŞMALARI</h2>
+                <div class="breadcrumb">
+                    <a href="https://duzcehurriyetortaokulu.meb.k12.tr/">Ana Sayfa</a> &gt; Bilgi Yarışmaları
+                </div>
+            </div>
+
+            <div class="filter-search-section">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tümü</button>
+                    <button class="filter-btn" data-filter="yakin">Yaklaşan Yarışmalar</button>
+                    <button class="filter-btn" data-filter="gecmis">Geçmiş Yarışmalar</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="yarisma-ara" placeholder="Yarışma ara...">
+                    <button class="search-btn" aria-label="Ara"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="competitions-grid">
+                <div class="competition-card" data-category="yakin">
+                    <div class="competition-image-container">
+                        <img src="https://via.placeholder.com/400x250/004a8f/ffffff?text=Genel+Kültür" alt="Genel Kültür Bilgi Yarışması">
+                        <div class="competition-date-badge">
+                            <span class="day">25</span>
+                            <span class="month">HAZ</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="competition-details">
+                        <h3>Genel Kültür Bilgi Yarışması</h3>
+                        <p class="meta-info"><i class="fas fa-map-marker-alt"></i> Okul Konferans Salonu</p>
+                        <p class="meta-info"><i class="fas fa-clock"></i> 14:00 - 16:00</p>
+                        <p class="description">Okulumuz öğrencileri arasında düzenlenecek olan genel kültür bilgi yarışması ile öğrencilerimizin bilgi birikimlerini test etme ve eğlenceli bir rekabet ortamı yaratma fırsatı sunuyoruz.</p>
+                        <a href="#" class="details-link-btn">Detaylar ve Başvuru</a>
+                    </div>
+                </div>
+
+                <div class="competition-card" data-category="yakin">
+                    <div class="competition-image-container">
+                        <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Matematik" alt="Matematik Olimpiyatları">
+                        <div class="competition-date-badge">
+                            <span class="day">10</span>
+                            <span class="month">TEM</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="competition-details">
+                        <h3>Matematik Olimpiyatları</h3>
+                        <p class="meta-info"><i class="fas fa-map-marker-alt"></i> Matematik Laboratuvarı</p>
+                        <p class="meta-info"><i class="fas fa-clock"></i> 10:00 - 12:30</p>
+                        <p class="description">Matematik zekasını ölçmek ve geliştirmek amacıyla düzenlenen bu olimpiyat, tüm sınıf seviyelerindeki öğrencilerimize açıktır. Kazananlara çeşitli ödüller verilecektir.</p>
+                        <a href="#" class="details-link-btn">Detaylar ve Başvuru</a>
+                    </div>
+                </div>
+
+                <div class="competition-card" data-category="gecmis">
+                    <div class="competition-image-container">
+                        <img src="https://via.placeholder.com/400x250/27ae60/ffffff?text=Bilim+ve+Teknoloji" alt="Bilim ve Teknoloji Yarışması">
+                        <div class="competition-date-badge past">
+                            <span class="day">15</span>
+                            <span class="month">MAY</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="competition-details">
+                        <h3>Bilim ve Teknoloji Yarışması</h3>
+                        <p class="meta-info"><i class="fas fa-map-marker-alt"></i> Fen Laboratuvarı</p>
+                        <p class="meta-info"><i class="fas fa-clock"></i> 13:30 - 15:30 (Tamamlandı)</p>
+                        <p class="description">Bilim ve teknoloji alanında düzenlenen yarışmamızda öğrencilerimiz harika projeler sundular. Yarışmanın sonuçlarını ve kazananların projelerini görmek için detayları inceleyebilirsiniz.</p>
+                        <a href="#" class="details-link-btn">Sonuçları Gör</a>
+                    </div>
+                </div>
+
+                 <div class="competition-card" data-category="gecmis">
+                    <div class="competition-image-container">
+                        <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=İngilizce" alt="İngilizce Bilgi Yarışması">
+                        <div class="competition-date-badge past">
+                            <span class="day">05</span>
+                            <span class="month">NİS</span>
+                            <span class="year">2025</span>
+                        </div>
+                    </div>
+                    <div class="competition-details">
+                        <h3>İngilizce Bilgi Yarışması</h3>
+                        <p class="meta-info"><i class="fas fa-map-marker-alt"></i> Dil Laboratuvarı</p>
+                        <p class="meta-info"><i class="fas fa-clock"></i> 09:00 - 11:00 (Tamamlandı)</p>
+                        <p class="description">Okulumuz 7. ve 8. sınıf öğrencileri arasında düzenlenen İngilizce bilgi yarışması büyük ilgi gördü. Yarışmada dereceye giren öğrencilerimize sertifikaları törenle verildi.</p>
+                        <a href="#" class="details-link-btn">Sonuçları Gör</a>
+                    </div>
+                </div>
+                </div>
+
+            <div class="registration-info-section">
+                <h3>Yarışmalara Nasıl Katılabilirsiniz?</h3>
+                <p>Okulumuz tarafından düzenlenen bilgi yarışmalarına katılmak isteyen öğrencilerimiz, ilgili yarışmanın duyurusunu takip ederek belirtilen tarihlerde sınıf öğretmenlerine başvurabilir veya okulumuzun duyurular bölümünden online başvuru formlarına ulaşabilirler.</p>
+                <a href="#" class="generic-btn">Okul Duyuruları</a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Adres: Kültür Mah. 760. Sk. No2 MERKEZ/DÜZCE</p>
+                    <p><i class="fas fa-phone"></i> Telefon: 0380 514 11 70</p>
+                    <p><i class="fas fa-envelope"></i> E-posta: <a href="mailto:750777@meb.k12.tr">750777@meb.k12.tr</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#">MEB</a></li>
+                        <li><a href="#">Düzce İl MEM</a></li>
+                        <li><a href="#">e-Okul</a></li>
+                        <li><a href="#">EBA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Düzce Hürriyet Ortaokulu. Tüm hakları saklıdır. Bu sayfa <span id="visitorName">Kodlama Desteği</span> tarafından <span id="creationDate">Mayıs 2025</span>'te oluşturulmuştur.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

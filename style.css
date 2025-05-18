@@ -1,0 +1,487 @@
+/* Genel Temel Stiller ve Sitenize Uyarlama */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Sitenizdeki arka plan rengine benzer */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px; /* Sitenizdeki ana içerik genişliğine benzer */
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header (Başlık Alanı) Stilleri */
+header {
+    background-color: #fff; /* Sitenizdeki header arka planı */
+    padding: 10px 20px;
+    border-bottom: 3px solid #d10000; /* Sitenizdeki kırmızı çizgi */
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo ve okul bilgisini ayırmak için */
+    padding-bottom: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 70px; /* Sitenizdeki logo boyutuna göre ayarlayın */
+    margin-right: 15px;
+}
+
+.school-info h1 {
+    font-size: 16px; /* Sitenizdeki boyuta göre */
+    color: #333;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+
+.school-info h2 {
+    font-size: 22px; /* Sitenizdeki boyuta göre */
+    color: #d10000; /* Sitenizdeki okul adı rengi */
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Ana Navigasyon (Menü) Stilleri */
+.main-nav {
+    background-color: #343a40; /* Sitenizdeki menü arka plan rengi */
+    border-radius: 4px; /* Sitenizdeki menü kenar yuvarlaklığı */
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Sitenizdeki gibi sola yaslı */
+}
+
+.main-nav ul li {
+    position: relative;
+}
+
+.main-nav ul li a {
+    display: block;
+    padding: 12px 18px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    background-color: #d10000; /* Sitenizdeki aktif/hover rengi */
+    color: #fff;
+}
+
+/* Sayfa Başlığı ve Breadcrumb */
+.page-title-container {
+    text-align: center;
+    padding: 25px 20px;
+    background-color: #f8f9fa; /* Hafif bir arka plan */
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.page-title-container h2 {
+    color: #004a8f; /* Ana başlık rengi */
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #004a8f;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+
+/* Filtreleme ve Arama Bölümü */
+.filter-search-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Küçük ekranlarda alt alta gelmesi için */
+}
+
+.filter-buttons button {
+    background-color: #004a8f; /* Okul mavisi */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:last-child {
+    margin-right: 0;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+    background-color: #d10000; /* Okul kırmızısı */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 15px;
+    width: 220px; /* Genişliği ayarlayabilirsiniz */
+}
+
+.search-box button.search-btn {
+    background-color: #004a8f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.search-box button.search-btn:hover {
+    background-color: #003366;
+}
+
+/* Yarışma Kartları Izgarası */
+.competitions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Kartların esnek dağılımı */
+    gap: 25px;
+    padding: 0 20px 30px 20px;
+}
+
+.competition-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* JavaScript ile gizlenip gösterilecek */
+    flex-direction: column;
+}
+
+.competition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.competition-image-container {
+    position: relative;
+    width: 100%;
+    padding-top: 62.5%; /* 16:10 aspect ratio (400x250 için) */
+    overflow: hidden;
+}
+
+.competition-image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmin tamamını kaplamasını sağlar */
+}
+
+.competition-date-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: rgba(0, 74, 143, 0.85); /* Yarı şeffaf mavi */
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.competition-date-badge.past {
+    background-color: rgba(100, 100, 100, 0.85); /* Yarı şeffaf gri */
+}
+
+.competition-date-badge .day {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+.competition-date-badge .month {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.competition-date-badge .year {
+    font-size: 11px;
+}
+
+
+.competition-details {
+    padding: 18px;
+    flex-grow: 1; /* Kartın alt kısmının esnemesini sağlar */
+    display: flex;
+    flex-direction: column;
+}
+
+.competition-details h3 {
+    font-size: 19px;
+    color: #004a8f;
+    margin: 0 0 10px 0;
+}
+
+.competition-details .meta-info {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.competition-details .meta-info i {
+    margin-right: 8px;
+    color: #004a8f;
+}
+
+.competition-details .description {
+    font-size: 14px;
+    color: #444;
+    margin: 12px 0;
+    flex-grow: 1; /* Açıklamanın kalan alanı doldurmasını sağlar */
+}
+
+.details-link-btn {
+    display: inline-block;
+    background-color: #e74c3c; /* Kırmızı tonu */
+    color: #fff;
+    padding: 9px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Butonu kartın en altına iter */
+}
+
+.details-link-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Katılım Bilgi Bölümü */
+.registration-info-section {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 0 20px 30px 20px;
+    text-align: center;
+}
+
+.registration-info-section h3 {
+    color: #004a8f;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.registration-info-section p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 15px;
+}
+
+.generic-btn {
+    display: inline-block;
+    background-color: #004a8f;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.generic-btn:hover {
+    background-color: #003366;
+}
+
+/* Footer (Alt Bilgi) Stilleri */
+footer {
+    background-color: #343a40; /* Sitenizdeki footer rengine benzer */
+    color: #f0f2f5;
+    padding-top: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px 20px 20px;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; /* Küçük ekranlarda daha iyi görünüm için */
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d10000; /* Kırmızı ayraç */
+    padding-bottom: 8px;
+}
+
+.footer-section p,
+.footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-section a {
+    color: #f0f2f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #d10000; /* Hover rengi */
+}
+
+.footer-section i {
+    margin-right: 8px;
+    color: #d10000; /* İkon rengi */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 20px; /* İkon boyutu */
+    color: #f0f2f5;
+}
+
+.social-icons a:hover {
+    color: #d10000;
+}
+
+.footer-bottom {
+    background-color: #212529; /* Daha koyu bir alt bant */
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+/* Responsive Tasarım Ayarlamaları */
+@media (max-width: 992px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+    }
+    .school-info {
+        margin-top: 10px;
+    }
+    .main-nav ul {
+        justify-content: center; /* Menüyü ortala */
+    }
+    .competitions-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav ul li a {
+        padding: 10px 15px;
+        border-bottom: 1px solid #495057; /* Ayraç */
+    }
+    .main-nav ul li:last-child a {
+        border-bottom: none;
+    }
+
+    .filter-search-section {
+        flex-direction: column;
+        align-items: stretch; /* Elemanları tam genişlikte yap */
+    }
+    .filter-buttons {
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap; /* Butonlar sığmazsa alt satıra geçsin */
+        justify-content: center;
+    }
+    .filter-buttons button {
+        margin-bottom: 8px; /* Butonlar arası boşluk */
+    }
+    .search-box {
+        width: 100%;
+    }
+    .search-box input[type="text"] {
+        width: calc(100% - 50px); /* Buton genişliğini çıkar */
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .school-info h1 {
+        font-size: 14px;
+    }
+    .school-info h2 {
+        font-size: 18px;
+    }
+    .page-title-container h2 {
+        font-size: 24px;
+    }
+    .filter-buttons button {
+        width: 100%; /* Butonları tam genişlikte yap */
+        margin-right: 0;
+    }
+    .competition-details h3 {
+        font-size: 17px;
+    }
+}
